@@ -1,0 +1,76 @@
+{
+    "tournaments": [
+        {
+            "id": 1,
+            "config": {
+                "number_of_players": 2,
+                "rounds": [
+                    {
+                        "description": "Essence of War",
+                        "armies_per_player": 4,
+                        "match_type": "ALL_PLAYERS"
+                    },
+                    {
+                        "description": "1.5k",
+                        "armies_per_player": 3,
+                        "match_type": "RANDOM_PLAYER",
+                        "selection": [
+                            "PLAYER_CHOICE",
+                            "OPPONENT_CHOICE",
+                            "BEST_RANKED"
+                        ]
+                    },
+                    {
+                        "description": "2250",
+                        "armies_per_player": 1,
+                        "match_type": "ALL_PLAYERS",
+                        "selection": [
+                            "PLAYER_CHOICE"
+                        ]
+                    }
+                ]
+            },
+            "armies": [
+                {
+                    "id": 1,
+                    "name": "Beast Herds"
+                },
+                {
+                    "id": 2,
+                    "name": "Daemon Legions"
+                },
+                {
+                    "id": 3,
+                    "name": "Warriors of the Dark Gods"
+                },
+                {
+                    "id": 3,
+                    "name": "Infernal Dwarves"
+                }
+            ],
+            "players": [
+                {
+                    "id": 1,
+                    "name": "Trent",
+                    "army_preferences": [],
+                    "given_armies": [
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Callum",
+                    "army_preferences": [
+                        2,
+                        1
+                    ],
+                    "given_armies": [
+                        2,
+                        1
+                    ]
+                }
+            ]
+        }
+    ]
+}
