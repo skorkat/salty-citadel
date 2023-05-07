@@ -4,7 +4,7 @@
       "id": 1,
       "config": {
         "name": "Test Tournament",
-        "number_of_players": 3,
+        "number_of_players": 4,
         "rounds": [
           {
             "description": "Essence of War",
@@ -39,10 +39,149 @@
           },
           {
             "id": 4,
+            "name": "Dread Elves"
+          },
+          {
+            "id": 5,
+            "name": "Highborn Elves"
+          },
+          {
+            "id": 6,
+            "name": "Sylvan Elves"
+          },
+          {
+            "id": 7,
+            "name": "Dwarven Holds"
+          },
+          {
+            "id": 8,
             "name": "Infernal Dwarves"
+          },
+          {
+            "id": 9,
+            "name": "Empire of Sonnstahl"
+          },
+          {
+            "id": 10,
+            "name": "Kingdom of Equitaine"
+          },
+          {
+            "id": 11,
+            "name": "Undying Dynasties"
+          },
+          {
+            "id": 12,
+            "name": "Vampire Covenant"
+          },
+          {
+            "id": 13,
+            "name": "Saurian Ancients"
+          },
+          {
+            "id": 14,
+            "name": "Ogre Khans"
+          },
+          {
+            "id": 15,
+            "name": "Orcs and Goblins"
+          },
+          {
+            "id": 16,
+            "name": "Vermin Swarm"
+          },
+          {
+            "id": 17,
+            "name": "Cultists",
+            "supplement": true
+          },
+          {
+            "id": 18,
+            "name": "Legions of Sin",
+            "supplement": true
+          },
+          {
+            "id": 19,
+            "name": "Asklanders",
+            "supplement": true
+          },
+          {
+            "id": 20,
+            "name": "Makhar",
+            "supplement": true
+          },
+          {
+            "id": 21,
+            "name": "Hobgoblins",
+            "supplement": true
           }
         ]
-      }
+      },
+      "playerArmies": [
+        {
+          "playerId": "1",
+          "armyId": 21
+        },
+        {
+          "playerId": "1",
+          "armyId": 7
+        },
+        {
+          "playerId": "1",
+          "armyId": 15
+        },
+        {
+          "playerId": "1",
+          "armyId": 10
+        },
+        {
+          "playerId": "2",
+          "armyId": 1
+        },
+        {
+          "playerId": "2",
+          "armyId": 3
+        },
+        {
+          "playerId": "2",
+          "armyId": 9
+        },
+        {
+          "playerId": "2",
+          "armyId": 2
+        },
+        {
+          "playerId": "3",
+          "armyId": 12
+        },
+        {
+          "playerId": "3",
+          "armyId": 5
+        },
+        {
+          "playerId": "3",
+          "armyId": 20
+        },
+        {
+          "playerId": "3",
+          "armyId": 19
+        },
+        {
+          "playerId": "4",
+          "armyId": 4
+        },
+        {
+          "playerId": "4",
+          "armyId": 6
+        },
+        {
+          "playerId": "4",
+          "armyId": 8
+        },
+        {
+          "playerId": "4",
+          "armyId": 14
+        }
+      ]
     }
   ],
   "players": [
@@ -50,7 +189,7 @@
       "id": 1,
       "tournamentId": 1,
       "name": "Trent",
-      "army_preferences": []
+      "army_preferences": [15, 7, 19]
     },
     {
       "id": 2,
@@ -61,8 +200,14 @@
     {
       "tournamentId": 1,
       "name": "Josh",
-      "army_preference": [3, 2],
+      "army_preferences": [12, 5, 6, 19, 1, 2, 20, 21],
       "id": 3
+    },
+    {
+      "tournamentId": 1,
+      "name": "Caitlin",
+      "army_preferences": [4, 5, 7, 6],
+      "id": 4
     }
   ]
 }

@@ -51,12 +51,8 @@ const TournamentSelection = ({ setTournamentId }) => {
   }, {});
 
   const renderCell = (tournament, columnKey) => {
-    console.log("tournament", tournament);
-    console.log("playersByTournament", playersByTournament);
     const playersInTournament =
       playersByTournament[tournament.id.toString()] || [];
-    console.log(tournament.id.toString());
-    console.log(playersInTournament);
     switch (columnKey) {
       case "name":
         return <Text>{tournament.config.name}</Text>;

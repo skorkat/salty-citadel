@@ -23,16 +23,8 @@ const Player = ({ tournament, onComplete }) => {
 
   const { isLoading, mutate } = useMutation({
     mutationFn: () => {
-      console.log(
-        "MUTATING",
-        JSON.stringify({
-          tournamentId: tournament.id,
-          name: value,
-          army_preference: selectedArmies,
-        })
-      );
       return fetch("http://localhost:3002/players", {
-        method: "post",
+        method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
@@ -40,7 +32,7 @@ const Player = ({ tournament, onComplete }) => {
         body: JSON.stringify({
           tournamentId: tournament.id,
           name: value,
-          army_preference: selectedArmies,
+          army_preferences: selectedArmies,
         }),
       });
     },
@@ -72,8 +64,6 @@ const Player = ({ tournament, onComplete }) => {
     }),
     {}
   );
-
-  console.log("value", value, value === "", !value);
 
   return (
     <Box>
@@ -140,7 +130,7 @@ const Player = ({ tournament, onComplete }) => {
           </Text>
           <Spacer y={1} />
           {selectedArmies.map((armyId, i) => (
-            <Text size="$xl">{`${i} - ${
+            <Text size="$xl">{`${i + 1} - ${
               armyIdToName[armyId.toString()]
             }`}</Text>
           ))}
