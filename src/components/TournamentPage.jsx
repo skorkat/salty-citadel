@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { listPlayersInTournamentQuery, getTournamentQuery } from "../api";
 import PlayerSelection from "./PlayerSelection";
 import GenerateArmies from "./GenerateArmies";
+import Matches from "./Matches";
 
 const TournamentPage = ({ tournamentId }) => {
   const {
@@ -41,6 +42,8 @@ const TournamentPage = ({ tournamentId }) => {
       ></GenerateArmies>
     );
   }
+
+  return <Matches tournament={tournamentData} players={playerData}></Matches>;
 };
 
 export default TournamentPage;

@@ -146,8 +146,8 @@ export function generateArmies(players, tournament) {
             playerToAssign = getRandom(playersWithPreference);
           } else {
             // Randomly assign it to one of the players
-            // TODO: This case should never be reached (because there will 
-            // always be at least one player who has set this as their 
+            // TODO: This case should never be reached (because there will
+            // always be at least one player who has set this as their
             // preference at this level)
             playerToAssign = getRandom(potentialPlayers);
           }
