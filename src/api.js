@@ -1,25 +1,21 @@
-export const BASE_URL = "https://skorkat-json-server.herokuapp.com"
+export const BASE_URL = "https://skorkat-json-server.herokuapp.com";
 
 export const listTournamentsQuery = (...args) => ({
   queryKey: ["tournaments"],
-  queryFn: () =>
-    fetch(`${BASE_URL}/tournaments`).then((res) => res.json()),
+  queryFn: () => fetch(`${BASE_URL}/tournaments`).then((res) => res.json()),
   ...args,
 });
 
 export const getTournamentQuery = (tournamentId, ...args) => ({
   queryKey: ["tournament", tournamentId],
   queryFn: () =>
-    fetch(`${BASE_URL}/tournaments/${tournamentId}`).then((res) =>
-      res.json()
-    ),
+    fetch(`${BASE_URL}/tournaments/${tournamentId}`).then((res) => res.json()),
   ...args,
 });
 
 export const listPlayersQuery = (...args) => ({
   queryKey: ["players"],
-  queryFn: () =>
-    fetch(`${BASE_URL}/players`).then((res) => res.json()),
+  queryFn: () => fetch(`${BASE_URL}/players`).then((res) => res.json()),
   ...args,
 });
 

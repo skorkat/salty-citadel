@@ -10,7 +10,7 @@ const Matches = ({ players, tournament }) => {
     }),
     {}
   );
-  
+
   return (
     <Box
       css={{

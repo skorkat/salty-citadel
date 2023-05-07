@@ -111,7 +111,7 @@ const Player = ({ tournament, onComplete }) => {
       <Box css={{ display: "flex", justifyContent: "space-around" }}>
         <Box css={{ display: "flex", flexDirection: "column" }}>
           <Text color="secondary" b>
-            Selected armies:
+            Selected armie:
           </Text>
           <Spacer y={1} />
           {tournament.config.armies.map((army) => (
