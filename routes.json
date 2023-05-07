@@ -1,4 +1,0 @@
-{
-  "/api/*": "/$1",
-  "/players/:tournamentId": "/players?tournamentId=:tournamentId"
-}

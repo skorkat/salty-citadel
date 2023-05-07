@@ -3,6 +3,7 @@ import * as React from "react";
 import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { Button, Card, Loading, Grid, Text, Tooltip } from "@nextui-org/react";
 
+import { BASE_URL } from "../api";
 import { Box } from "../blocks/Box";
 import { generateArmies } from "../functions/generateArmies";
 
@@ -12,7 +13,7 @@ const GenerateArmies = ({ players, tournament }) => {
 
   const { isLoading, mutate } = useMutation({
     mutationFn: (playerArmies) => {
-      return fetch(`http://localhost:3002/tournaments/${tournament.id}`, {
+      return fetch(`${BASE_URL}/tournaments/${tournament.id}`, {
         method: "PATCH",
         headers: {
           Accept: "application/json",
@@ -50,7 +51,7 @@ const GenerateArmies = ({ players, tournament }) => {
           flexWrap: "wrap",
         }}
       >
-        {players.map((player) => (
+        {players?.map((player) => (
           <Box>
             <Card
               variant="bordered"

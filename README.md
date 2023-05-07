@@ -12,7 +12,7 @@ React Query: https://tanstack.com/query/latest
 
 JSON Server (for database): https://www.npmjs.com/package/json-server
 
-To run json-server: `json-server --watch db.json --routes routes.json -p 3002`
+To run json-server: `json-server --watch db.json -p 3002`. Note that you will have to update the `BASE_URL` in `api.js` to be `http://localhost:3002` otherwise you will use the live data.
 
 ## Available Scripts
 

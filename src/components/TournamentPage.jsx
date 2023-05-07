@@ -34,7 +34,7 @@ const TournamentPage = ({ tournamentId }) => {
     );
   }
 
-  if (!tournamentData.playerArmies.length > 0) {
+  if (!tournamentData.playerArmies || !tournamentData.playerArmies.length > 0) {
     return (
       <GenerateArmies
         tournament={tournamentData}

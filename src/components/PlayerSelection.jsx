@@ -39,7 +39,7 @@ const TournamentPage = ({ tournament, players }) => {
           flexWrap: "wrap",
         }}
       >
-        {players.map((player) => (
+        {players?.map((player) => (
           <Box>
             <Card
               variant="bordered"

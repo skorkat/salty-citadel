@@ -13,7 +13,7 @@ import {
 import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { FaAngleRight } from "react-icons/fa";
 
-import { getTournamentQuery } from "../api";
+import { BASE_URL } from "../api";
 import { Box } from "../blocks/Box";
 
 const Player = ({ tournament, onComplete }) => {
@@ -23,7 +23,7 @@ const Player = ({ tournament, onComplete }) => {
 
   const { isLoading, mutate } = useMutation({
     mutationFn: () => {
-      return fetch("http://localhost:3002/players", {
+      return fetch(`${BASE_URL}/players`, {
         method: "POST",
         headers: {
           Accept: "application/json",
