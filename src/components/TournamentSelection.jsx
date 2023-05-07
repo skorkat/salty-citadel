@@ -14,7 +14,7 @@ const columns = [
   { name: "NUM ARMIES", key: "num_armies" },
   { name: "NUM ROUNDS", key: "num_rounds" },
   { name: "STATUS", key: "status" },
-  { name: "ACTIONS", key: "actions" },
+  // { name: "ACTIONS", key: "actions" },
 ];
 
 const TournamentSelection = ({ setTournamentId }) => {
