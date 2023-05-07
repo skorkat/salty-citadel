@@ -89,13 +89,17 @@ const Player = ({ tournament, onComplete }) => {
       </Box>
       <Spacer y={2} />
       <Text size="$sm" i>
-        Select the armies you might be interested in playing. You can select 0
-        armies, all of the armies, or anywhere in between.
+        Start by selecting the armies you are interested in playing from the
+        list below. You can select 0 armies, all{" "}
+        {tournament.config.armies.length} of the armies, or any number in
+        between.
       </Text>
       <Spacer y={1} />
       <Text size="$sm" i>
-        The order you select armies in will determing the your preference order.
-        You can unselect and reselect armies to re-order your preferences.{" "}
+        Armies you select will be listed in the order chosen. This list acts as
+        your preferences, so please start by selecting the army you want to play
+        the most. You can unselect and reselect armies to re-order your
+        preferences.
       </Text>
       <Spacer y={1} />
       <Text size="$sm" i>
@@ -106,10 +110,25 @@ const Player = ({ tournament, onComplete }) => {
         players choose the same preferences as you.
       </Text>
       <Spacer y={1} />
+      {tournament.config.link && (
+        <Text size="$sm" i>
+          You can find more details on the background and playstyles of the
+          armies {" "}
+          <a
+            href={tournament.config.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
+        </Text>
+      )}
+      <Spacer y={1} />
       <Box css={{ display: "flex", justifyContent: "space-around" }}>
         <Box css={{ display: "flex", flexDirection: "column" }}>
           <Text color="secondary" b>
-            Selected armie:
+            Select army:
           </Text>
           <Spacer y={1} />
           {tournament.config.armies.map((army) => (
@@ -134,6 +153,7 @@ const Player = ({ tournament, onComplete }) => {
           ))}
         </Box>
       </Box>
+      <Spacer y={2} />
     </Box>
   );
 };

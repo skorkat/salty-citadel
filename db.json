@@ -4,7 +4,8 @@
       "id": 1,
       "config": {
         "name": "Test Tournament",
-        "number_of_players": 4,
+        "number_of_players": 5,
+        "link": "https://www.the-ninth-age.com/",
         "rounds": [
           {
             "description": "Essence of War",
