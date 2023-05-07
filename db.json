@@ -3,7 +3,8 @@
     {
       "id": 1,
       "config": {
-        "number_of_players": 2,
+        "name": "Test Tournament",
+        "number_of_players": 3,
         "rounds": [
           {
             "description": "Essence of War",
@@ -22,40 +23,46 @@
             "match_type": "ALL_PLAYERS",
             "selection": ["PLAYER_CHOICE"]
           }
+        ],
+        "armies": [
+          {
+            "id": 1,
+            "name": "Beast Herds"
+          },
+          {
+            "id": 2,
+            "name": "Daemon Legions"
+          },
+          {
+            "id": 3,
+            "name": "Warriors of the Dark Gods"
+          },
+          {
+            "id": 4,
+            "name": "Infernal Dwarves"
+          }
         ]
-      },
-      "armies": [
-        {
-          "id": 1,
-          "name": "Beast Herds"
-        },
-        {
-          "id": 2,
-          "name": "Daemon Legions"
-        },
-        {
-          "id": 3,
-          "name": "Warriors of the Dark Gods"
-        },
-        {
-          "id": 3,
-          "name": "Infernal Dwarves"
-        }
-      ],
-      "players": [
-        {
-          "id": 1,
-          "name": "Trent",
-          "army_preferences": [],
-          "given_armies": [3, 4]
-        },
-        {
-          "id": 1,
-          "name": "Callum",
-          "army_preferences": [2, 1],
-          "given_armies": [2, 1]
-        }
-      ]
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "tournamentId": 1,
+      "name": "Trent",
+      "army_preferences": []
+    },
+    {
+      "id": 2,
+      "tournamentId": 1,
+      "name": "Callum",
+      "army_preferences": [2, 1]
+    },
+    {
+      "tournamentId": 1,
+      "name": "Josh",
+      "army_preference": [3, 2],
+      "id": 3
     }
   ]
 }

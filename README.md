@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Libraries
+
+NextUi: https://nextui.org/
+
+React Icons (Font Awesome 5): https://react-icons.github.io/react-icons/icons?name=fa
+
+React Query: https://tanstack.com/query/latest
+
+JSON Server (for database): https://www.npmjs.com/package/json-server
+
+To run json-server: `json-server --watch db.json --routes routes.json -p 3002`
+
 ## Available Scripts
 
 In the project directory, you can run:
