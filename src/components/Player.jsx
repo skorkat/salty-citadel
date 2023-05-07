@@ -5,10 +5,8 @@ import {
   Input,
   Loading,
   useInput,
-  Grid,
   Spacer,
   Text,
-  Tooltip,
 } from "@nextui-org/react";
 import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { FaAngleRight } from "react-icons/fa";
@@ -18,7 +16,7 @@ import { Box } from "../blocks/Box";
 
 const Player = ({ tournament, onComplete }) => {
   const queryClient = useQueryClient();
-  const { value, reset, bindings } = useInput("");
+  const { value, bindings } = useInput("");
   const [selectedArmies, setSelectedArmies] = React.useState([]);
 
   const { isLoading, mutate } = useMutation({

@@ -2,7 +2,6 @@ import { Loading, Table, Row, Col, Tooltip, Text } from "@nextui-org/react";
 import { useQuery } from "@tanstack/react-query";
 
 import { StyledBadge } from "../blocks/StyleBadge";
-import { DeleteIcon } from "../icons/DeleteIcon";
 import { IconButton } from "../icons/IconButton";
 
 import { FaTrashAlt } from "react-icons/fa";

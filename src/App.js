@@ -1,14 +1,9 @@
 import * as React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
-import { createTheme, NextUIProvider, Spacer } from "@nextui-org/react";
+import { Spacer } from "@nextui-org/react";
 import { Navbar, Text } from "@nextui-org/react";
-import {
-  useQuery,
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 
 import { Box } from "./blocks/Box";
 import TournamentSelection from "./components/TournamentSelection";

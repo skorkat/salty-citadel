@@ -1,7 +1,6 @@
 import * as React from "react";
 
 import { Card, Text, Tooltip } from "@nextui-org/react";
-import { useQuery } from "@tanstack/react-query";
 import { FaPlus } from "react-icons/fa";
 
 import { Box } from "../blocks/Box";

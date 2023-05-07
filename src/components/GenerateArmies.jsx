@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { useQueryClient, useMutation } from "@tanstack/react-query";
-import { Button, Card, Loading, Grid, Text, Tooltip } from "@nextui-org/react";
+import { Button, Card, Loading, Text } from "@nextui-org/react";
 
 import { BASE_URL } from "../api";
 import { Box } from "../blocks/Box";
